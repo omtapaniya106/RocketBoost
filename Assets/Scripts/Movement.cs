@@ -55,6 +55,5 @@ public class Movement : MonoBehaviour
         rb.freezeRotation = true;
         transform.Rotate(Vector3.forward * RotationthisFram * Time.fixedDeltaTime);
         rb.freezeRotation = false;
-        Debug.Log("Commit");
     }
 }
