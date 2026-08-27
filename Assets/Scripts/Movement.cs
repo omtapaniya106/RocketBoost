@@ -10,10 +10,13 @@ public class Movement : MonoBehaviour
     [SerializeField] float RotationStength = 20f;
 
     Rigidbody rb;
+    AudioSource audioSource;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();   
+        rb = GetComponent<Rigidbody>(); 
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     void OnEnable()
@@ -33,6 +36,14 @@ public class Movement : MonoBehaviour
         if (ProcesThrust.IsPressed())
         {
             rb.AddRelativeForce(Vector3.up * ThrustStength * Time.fixedDeltaTime);
+            if(!audioSource.isPlaying)
+            {
+                audioSource.Play();   
+            }
+        }
+        else
+        {
+            audioSource.Pause();
         }
     }
 
