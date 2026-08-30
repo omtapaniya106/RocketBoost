@@ -189,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 96052874}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.49, y: 2.5400002, z: -10}
+  m_LocalPosition: {x: -12.489999, y: 2.6999993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -485,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.49, y: 2.5400002, z: -10}
+  m_LocalPosition: {x: -12.489999, y: 2.6999993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -533,7 +533,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2655874495102253736, guid: a8401b9fe6130c64292d341945c87b3d, type: 3}
       propertyPath: m_Name
-      value: Launch Pad (1)
+      value: Finish Pad
       objectReference: {fileID: 0}
     - target: {fileID: 2655874495102253736, guid: a8401b9fe6130c64292d341945c87b3d, type: 3}
       propertyPath: m_TagString
@@ -579,6 +579,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4601398678907345789, guid: a8401b9fe6130c64292d341945c87b3d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 76b1a399f49d8a34c969523505e31e6d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -837,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392629495077715525, guid: ce44c7218b53b704f8a132ea82191d98, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.54
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 7392629495077715525, guid: ce44c7218b53b704f8a132ea82191d98, type: 3}
       propertyPath: m_LocalPosition.z
@@ -884,7 +888,7 @@ SceneRoots:
   - {fileID: 96052876}
   - {fileID: 203844589}
   - {fileID: 2140684781}
-  - {fileID: 6191694184159513206}
   - {fileID: 2321287160893677821}
   - {fileID: 1549366002}
   - {fileID: 2175784551578615233}
+  - {fileID: 6191694184159513206}

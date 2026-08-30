@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using Unity.Loading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;  
 
 public class CollisionHandler : MonoBehaviour
@@ -16,15 +17,34 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
 
     bool isControllable = true;
+    bool isCollidable = true;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
+    // devloper CheatCode 
+    // void Update()
+    // {
+    //     RespondToDebugKeys();
+    // }
+
+    // void RespondToDebugKeys()
+    // {
+    //     if(Keyboard.current.lKey.wasPressedThisFrame)
+    //     {
+    //         Invoke("NextLevel",LoadingTime);
+    //     }
+    //     else if(Keyboard.current.cKey.wasPressedThisFrame)
+    //     {
+    //         isCollidable = !isCollidable;
+    //     }
+    // }
+
     private void OnCollisionEnter(Collision other)
     {
-        if(!isControllable)
+        if(!isControllable || !isCollidable)
         {
             return;
         }
